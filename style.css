@@ -11,23 +11,37 @@
 }
 
 .modal{
-    border-radius: .3rem;
-    background-color: #f1f1f1;
+    transition :all .3s linear;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-55%);
-    height:30vh;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: .3rem;
+    background-color: rgba(0,0,0,0.6);
     padding:3em 2em ; 
-    border: 1px solid lightgray;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: .5rem;
     display: none;
+    
+}
+
+.in_modal{
+    width:25rem;
+    height:13rem;
+    border: 1px solid lightgray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .progress{
     background-color: white;
+    transition: all .3s linear;
 }
 
 .modal span{
@@ -49,7 +63,7 @@ margin-bottom: 1.1em;
 }
 
 *{
-
+    transition: .1s linear all;
     font-family: 'Noto Sans TC', sans-serif;
     box-sizing: border-box;
 }
@@ -58,8 +72,8 @@ body{
     position: relative;
     height:100vh;
     background-color: #FFC8DF;
-    margin: 1em;
     padding:1em;
+    overflow: hidden;
 }
 footer{
     height:15vh;
@@ -96,9 +110,7 @@ section:active{
 }
 
 
-.modal{
-    opacity: 1;
-}
+
 
 h1{
 margin-bottom: 1rem;
@@ -152,3 +164,36 @@ main{
     flex-wrap: wrap;
 }
 
+
+@media screen and (max-width:600px) {
+    html{
+        
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width:1400px){
+    html{
+        
+        font-size: 1.2rem;
+    }
+}
+
+@media  screen and (max-height:600px ) {
+        html{
+            font-size: .8rem;
+        }
+}
+
+@media  screen and (max-height:500px ) {
+    html{
+        font-size: .6rem;
+    }
+}
+
+
+@media  screen and (max-height:200px ) {
+    html{
+        font-size: .5rem;
+    }
+}

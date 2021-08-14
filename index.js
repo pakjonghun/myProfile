@@ -3,7 +3,7 @@ console.log("😁 안녕하세요 박정훈 입니다 반갑습니다.!!!!!!")
 
 const modalSpan = document.getElementById('modal_span');
 const modalP = document.getElementById('modal_p');
-const main = document.querySelector('main');
+const mainPage = document.getElementById('main');
 const progress =document.querySelector('progress');
 
 class Modal{
@@ -23,6 +23,8 @@ class Modal{
 
      insertModal=()=>{
         this.sectionElement.classList.add('disable')
+    
+
         this.paintModal(this.modalId)
         if(this.id=="section1"){
             modalSpan.innerText = "박정훈 소개"
@@ -44,8 +46,7 @@ class Modal{
     }
 
     paintModal=()=>{
-        this.modalId.style.display ="flex";
-        this.modalId.style.opacity=1;
+        this.modalId.style.display='flex'
     }
 
     deleteModal = ()=>{
