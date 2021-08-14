@@ -1,0 +1,154 @@
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Noto+Sans+TC:wght@900&display=swap');
+
+
+.disable{
+ pointer-events: none;
+ cursor:none;
+ opacity: .3;
+}
+
+.modal{
+    border-radius: .3rem;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    height:30vh;
+    padding:3em 2em ; 
+    border: 1px solid lightgray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.progress{
+    background-color: white;
+}
+
+.modal span{
+    
+margin-bottom: 1.1em;
+
+}
+
+.modal p{
+    line-height: 130%;
+    text-align: center;
+    color: gray;
+}
+
+.modal button{
+    margin: 1em;
+    padding: .5em .3rm
+    
+}
+
+*{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height:100vh;
+    background-color: #FFC8DF;
+    margin: 1em;
+    padding:1em;
+}
+footer{
+    height:15vh;
+}
+
+
+.item{
+    font-family: 'Arimo', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.abso{
+    opacity: .5;
+    width: 500;
+    top: 50%;
+    left: 50%;
+   transform:translate(-50%,-65%);
+    position: absolute;
+    color: white;
+    font-size: 13rem;
+    z-index: -1;
+}
+
+section:hover{
+opacity: .8;
+}
+
+section:active{
+    opacity: .6;
+}
+
+
+.modal{
+    opacity: 1;
+}
+
+h1{
+margin-bottom: 1rem;
+    color: gray;
+}
+h3{
+    font-size: 1.1rem;
+    margin: .3rem;
+    border-radius: .2rem;
+    padding:.5rem;
+    color: white;
+    background-color: black;
+}
+
+header{
+    height:10vh;
+    padding:1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+
+}
+
+
+progress{
+    width:10rem;
+    height:3rem;
+}
+
+section{
+    cursor: pointer;
+    padding-top: 1em;
+    position: relative;
+    border-radius: .3rem;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:15rem;
+    height:15rem;
+}
+
+main{
+    height:75vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
